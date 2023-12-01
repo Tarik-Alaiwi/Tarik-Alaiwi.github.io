@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(16, 32, 78);
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.content{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p1{
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+}
+
+.p2{
+    font-size: 32px;
+    font-weight: 500;
+    color: rgb(0, 107, 0);
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
