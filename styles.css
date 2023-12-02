@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(16, 32, 78);
+    background-color: #011F3C;
     font-family: Roboto;
     display: flex;
     justify-content: center;
@@ -10,23 +10,56 @@ body{
     width: 80%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 }
 
 .p1{
     font-size: 30px;
     font-weight: 500;
     color: white;
+    margin-bottom: 8px;
 }
 
 .p2{
     font-size: 32px;
     font-weight: 500;
-    color: rgb(0, 107, 0);
-    text-decoration: underline;
-    margin-bottom: 10px;
+    color: #0B8561;
+    border-bottom: 2px solid #0B8561; 
+    padding-bottom: 3px; 
+    margin-bottom: 18px;
+    width: 270px;
 }
 
 .input-div{
     margin-bottom: 20px;
+}
+
+.input{
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    padding-right: 200px;
+    border: none;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #0B8561;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:active{
+    background-color: #13b987;
+    transition: 100ms;
+}
+
+img{
+    width: 17px;
+    margin-right: 5px;
 }
