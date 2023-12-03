@@ -13,7 +13,7 @@ function addOperation(num){
 }
 
 function result(){
-    operation = eval(operation);
+    operation = eval(operation).toFixed(2);
     operations.textContent = operation;
     quickResult.textContent = "";
     document.querySelector('.operations-p').classList.add('green');
@@ -32,5 +32,21 @@ function remove(){
     operation = operation.slice(0, -1);
     operations.textContent = operation;
     quickResult.textContent = operation;
+    document.querySelector('.operations-p').classList.remove('green');
+}
+
+function dot(){
+    console.log(operations.textContent !== '');
+    if(operations.textContent.includes('.')){
+        return;
+    }
+    if(operations.textContent === ''){
+        operation += '0.';
+    }else if(operations.textContent !== '' && !operations.textContent.includes('.')){
+        operation += '.';
+    }
+    console.log(operation);
+    operations.textContent = operation;
+    quickResult.textContent = eval(operation);
     document.querySelector('.operations-p').classList.remove('green');
 }
