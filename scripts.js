@@ -15,3 +15,10 @@ function result(){
     operation = eval(operation);
     operations.textContent = operation;
 }
+
+function clean(){
+    operation = "";
+    operations.textContent = operation;
+    quickResult.textContent = operation;
+    console.log(1);
+}
