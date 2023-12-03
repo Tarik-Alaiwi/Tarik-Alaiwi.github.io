@@ -78,4 +78,8 @@ body{
     .conteiner{
         width: 100%;
     }
+
+    .btns{
+        grid-auto-rows: minmax(80px, auto);
+    }
 }
