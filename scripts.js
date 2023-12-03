@@ -22,3 +22,10 @@ function clean(){
     quickResult.textContent = operation;
     console.log(1);
 }
+
+function remove(){
+    operation = operations.textContent;
+    operation = operation.slice(0, -1);
+    operations.textContent = operation;
+    quickResult.textContent = operation;
+}
