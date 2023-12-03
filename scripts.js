@@ -9,11 +9,14 @@ function addOperation(num){
     console.log(operation);
     operations.textContent = operation;
     quickResult.textContent = eval(operation);
+    document.querySelector('.operations-p').classList.remove('green');
 }
 
 function result(){
     operation = eval(operation);
     operations.textContent = operation;
+    quickResult.textContent = "";
+    document.querySelector('.operations-p').classList.add('green');
 }
 
 function clean(){
@@ -21,6 +24,7 @@ function clean(){
     operations.textContent = operation;
     quickResult.textContent = operation;
     console.log(1);
+    document.querySelector('.operations-p').classList.remove('green');
 }
 
 function remove(){
@@ -28,4 +32,5 @@ function remove(){
     operation = operation.slice(0, -1);
     operations.textContent = operation;
     quickResult.textContent = operation;
+    document.querySelector('.operations-p').classList.remove('green');
 }
