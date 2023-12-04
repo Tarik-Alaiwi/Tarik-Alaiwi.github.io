@@ -65,10 +65,12 @@ body{
 
 .operations-p{
     font-size: 40px;
+    height: 40px;
 }
 
 .quick-result-p{
     font-size: 30px;
+    height: 30px;
     color: gray;
 }
 
@@ -98,10 +100,12 @@ body{
 
     .operations-p{
         font-size: 30px;
+        height: 30px;
     }
 
     .btn2{
         font-size: 20px;
+        height: 20px;
     }
 
     .btn1{
