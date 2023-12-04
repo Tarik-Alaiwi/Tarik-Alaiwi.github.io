@@ -13,7 +13,13 @@ function addOperation(num){
 }
 
 function result(){
-    operation = eval(operation).toFixed(2);
+    let tmp = eval(operation);
+    if(Number.isInteger(tmp)){
+        operation = tmp
+    }else{
+        operation = tmp.toFixed(2);
+    }
+    console.log(Number.isInteger(tmp))
     operations.textContent = operation;
     quickResult.textContent = "";
     document.querySelector('.operations-p').classList.add('green');
@@ -49,4 +55,11 @@ function dot(){
     operations.textContent = operation;
     quickResult.textContent = eval(operation);
     document.querySelector('.operations-p').classList.remove('green');
+}
+
+function percent(){
+    operation = operations.textContent;
+    operation *= 0.01;
+    operations.textContent = operation;
+    quickResult.textContent = eval(operation);
 }
